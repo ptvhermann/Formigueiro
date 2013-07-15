@@ -14,7 +14,7 @@ development:
   host: localhost
   database: formigueiro_real
   pool: 5
-  username: rscoutinho
+  username: renancoutinho
   password: vasco12345
 
 
@@ -43,7 +43,7 @@ test:
   host: localhost
   database: formigueiro_teste
   pool: 5
-  username: rscoutinho
+  username: renancoutinho
   password: vasco12345
 
 
