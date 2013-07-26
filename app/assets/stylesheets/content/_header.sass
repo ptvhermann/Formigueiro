@@ -1,48 +1,45 @@
+
 #header
   +grid-container
   +grid-system(16)
   padding: 17px 10px 0 10px
-  margin: 0 auto 30px
+  margin: 0 auto 340px
   display: block
   .logo
-    +grid(4)
+    +grid(6.5)
     +alpha
-    margin-right: 20px
-    height: 54px
+    margin-left: 22px
+    margin-top: 17px
+    height: 90px
     border: none
     background: url($images_path+"logo.png") left top no-repeat
     text-indent: -9999em
   nav
-    a
-      display: inline-block
-      font-family: "Lato"
-      text-decoration: none
-    &.actions
-      +grid(4)
-      margin-top: 20px
+    +grid(9)
+    float: right
+    margin: 0 0 0 0
+    &.menu
+      float:right
       a
-        color: $ultra_gryn
-        font-size: 18px
-        margin-right: 27px
+        color: #02746d
+        font-size: 22px
+        margin-right: 12px
         &:last-child
-          margin-right: 0
+          color: #d82e1d
         &:hover
           text-decoration: underline
-        &.explore
-          background: url($images_path+"explore_icon23x15.png") left 3px no-repeat
-          text-indent: 30px
-        &.submit_project
-          background: url($images_path+"submit_project_icon25x13.png") left 4px no-repeat
-          text-indent: 30px
-    &.menu
-      +grid(4)
-      margin-top: 20px
+    a
+      display: inline-block
+      font-family: "Bevan"
+      text-decoration: none
+      float: right
+    &.linha
+      float: right
+      margin-bottom: 10px
       a
-        font-family: "Lato"
-        text-transform: lowercase
-        color: $ultra_gryn
-        font-size: 14px
-        margin-right: 12px
+        font-family: "Bevan"
+        color: #d82e1d
+        font-size: 16px
         &.my_profile_link
           width: 130px
           display: block
@@ -55,8 +52,6 @@
             position: relative
             float: left
             margin-top: -14px
-            margin-right: 5px
-
             &:hover
               +box-shadow(rgba(black, 0.6) 1px 1px 2px inset)
           .current_user_name
@@ -67,32 +62,27 @@
             position: relative
             margin-top: 7px
         &:last-child
-          margin-right: none
+          color: #1d374c
+          margin-right: 12px
         &:hover
-          color: $pink
-  .search
-    +grid(4)
-    margin-top: 18px
-    form
-      width: 220px
-      height: 22px
-      +border-radius(8px)
-      border: 1px $minimal_gryn solid
-      // +box-shadow(rgba(black, 0.1) 1px 1px 2px)
-      background: white
-      input[type="text"]
-        border: none
-        width: 190px
-        float: left
-        margin-left: 3px
-        margin-top: 3px
-        &:focus
-          outline: none
-      input[type="submit"]
-        background: url($images_path+"search_submit15x15.png") left top no-repeat
-        width: 15px
-        height: 15px
-        border: none
-        text-indent: -9999em
-        float: right
-        margin: 3px 5px 0 0px
+          text-decoration: underline
+  p
+    +grid(16)
+    font-family: "Bevan"
+    text-align: right
+    line-height: 50px
+    font-size: 40px
+    color: #02746d
+  #negrito
+    color: #1d374c
+  #projeto
+    font-size: 24px
+    color: white
+    text-decoration: none
+    background-color: #fb5813
+    margin-right: 157px
+    border-radius: 20px
+    padding-left: 10px
+    padding-right: 10px
+    padding-top: 1px
+    padding-bottom: 1px
