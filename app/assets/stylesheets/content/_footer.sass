@@ -2,10 +2,9 @@
   +grid-system(16)
   +border-radius(4px)
   padding: 0 10px 0 10px
-  border: 1px $df_gryn solid
-  background: $ultra_gryn !important
+  height: 282px
   .content
-    padding-top: 30px
+    padding-top: 20px
     padding-bottom: 10px
     h3
       font-family: 'Lato'
@@ -15,24 +14,43 @@
       padding-bottom: 40px
       padding-top: 5px
     .info
-      +grid(4)
-      +grid-suffix(1)
+      +grid(8)
       ul
+        margin-top: 23px
         li
-          margin-bottom: 24px
+          margin-bottom: 14px
+          margin-left: 300px
           a
-            font-family: "Lato"
-            font-size: 18px
+            font-family: "Bevan"
+            font-size: 15px
             font-weight: lighter
-            color: white
+            color: #69bfba
             text-decoration: none
             &:hover
-              color: $pink
-
-    .opendata
-      +grid(5)
-      +grid-suffix(1)
+              text-decoration: underline
+    .info2
+      +grid(4)
       ul
+        margin-top: 23px
+        li
+          margin-bottom: 14px
+          margin-left: 18px
+          a
+            font-family: "Bevan"
+            font-size: 15px
+            font-weight: lighter
+            color: #69bfba
+            text-decoration: none
+            &:hover
+              text-decoration: underline
+    .opendata
+      +grid(4)
+      margin-top: 150px
+      float: right
+      &.twitter
+        float: right
+      ul
+        margin-top: 100px
         display: block
         li
           width: 100%
