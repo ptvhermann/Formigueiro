@@ -239,7 +239,7 @@ pt:
   explore:
     index:
       near: 'Próximos a mim'
-      categories: Categorias
+      categories: Cateorias
       expiring: "Na reta final"
       quick_explore: "Busca rápida"
       recent: Recentes
@@ -310,8 +310,8 @@ pt:
       blog: blog
       help: ajuda
       faq: FAQ
-      signup: cadastre-se
-      signin: login
+      signup: Registre-se
+      signin: Entre
       explore: explore
       submit_project: envie
       profile: "meu perfil"

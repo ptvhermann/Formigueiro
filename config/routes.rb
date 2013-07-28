@@ -149,6 +149,6 @@ Catarse::Application.routes.draw do
   match "/:permalink" => "projects#show", as: :project_by_slug
 
   # Root path
-  root to: 'projects#index'
+  root to: 'explore#recommended#index'
 
 end
