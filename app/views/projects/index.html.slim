@@ -4,16 +4,36 @@
 #page_content
   .container
     .main
+      .selected_projects.list
+        .list_title
+          .title
+            h2= t('sections.selection.title')
+        .projects
+          = render partial: 'project', locals: {project: @first_project, custom_class: 'first' } if @first_project
+          = render partial: 'project', locals: {project: @second_project } if @second_project
+          = render partial: 'project', locals: {project: @third_project, custom_class: 'last' } if @third_project
+        .explore_link
+          hr
+          = link_to t('main.links.selected'), explore_path(anchor: :recommended)
+
+      .expiring_projects.list
+        .list_title
+          .title
+            h2= t('sections.expiring.title')
+        .projects
+          - @expiring.each_with_index do |item,i|
+            == render 'project', project: item, custom_class: ((@expiring.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+        .explore_link
+          hr
+          = link_to t('main.links.expiring'), explore_path(anchor: :expiring)
+
       .recents_projects.list
         .list_title
           .title
             h2= t('sections.recents.title')
         .projects
-          - unless @recent.empty?
-            p
-              | Teste
-            - @recent.each_with_index do |item,i|
-              == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
+          - @recent.each_with_index do |item,i|
+            == render 'project', project: item, custom_class: ((@recent.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))
         .explore_link
           hr
           = link_to t('main.links.recents'), explore_path(anchor: :recent)
