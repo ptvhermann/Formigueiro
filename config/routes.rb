@@ -56,6 +56,7 @@ Catarse::Application.routes.draw do
   match "/explore" => "explore#index", as: :explore
   match "/explore#:quick" => "explore#index", as: :explore_quick
   match "/credits" => "credits#index", as: :credits
+  match "/explore#recommended" => "explore#index"
 
   match "/reward/:id" => "rewards#show", as: :reward
   resources :posts, only: [:index, :create]
@@ -149,6 +150,6 @@ Catarse::Application.routes.draw do
   match "/:permalink" => "projects#show", as: :project_by_slug
 
   # Root path
-  root to: 'explore#recommended#index'
+  root to: 'explore#index', :quick => 'recommended'
 
 end
