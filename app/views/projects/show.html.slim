@@ -43,7 +43,8 @@
 
     #project_description[data-project=@project.to_json]
     .section_header
-      h1= @project.name, @project.user.display_name
+      h1= @project.name 
+      h4= @project.user.display_name
     .tab_container
       nav#project_menu
         = link_to '#about', id: 'about_link', class: 'selected' do
