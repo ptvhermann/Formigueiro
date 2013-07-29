@@ -28,19 +28,6 @@ script type="text/template" id="project_template"
         h4
           a href="<%= url %>" itemprop="url"
             | <%= name %>
-        p.author
-          = "#{t('projects.box.by')} "
-          span[itemprop="author"] <%= user['name'] %>
-        p.description[itemprop="description"]
-          | <%= headline %>
-        p.where[itemprop="contentLocation"]
-          |<% if (user['city'] && user['city'].length > 0) { %>
-          | <%= user['city'] %>
-          |<% if (user['state'] && user['state'].length > 0) { %>
-          | /
-          | <%= user['state'] %>
-          |<% } %>
-          |<% } %>
       .info_bar
         .status_bar
           .progress style="width: <%= display_progress %>%;"
