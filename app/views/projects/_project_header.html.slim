@@ -2,13 +2,10 @@
   iframe src="#{project.video_embed_url}" width="461" height="258" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 .info
   h3= title
-  h2
-    = link_to project.name, project_by_slug_path(permalink: project.permalink)
   .author
-    p
-      = t('projects.box.by')
-      |&nbsp;
-      = link_to project.user.name, user_path(project.user)
+    = t('projects.box.by')
+    |&nbsp;
+    = link_to project.user.name, user_path(project.user)
   .description
     p= link_to truncate(project.headline, length: 120), project_by_slug_path(permalink: project.permalink)
   .author
