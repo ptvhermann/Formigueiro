@@ -20,14 +20,12 @@ script type="text/template" id="project_template"
         |<% } %>
     | <% } %>
     .box
-      p.black_box <%=  category['name_' + CATARSE.locale] %>
+      p.black_box 
+        a href="<%= url %>" itemprop="url"
+          | <%= name %>
       .cover
         a href="<%= url %>"
           img src="<%= image %>" itemprop="image"
-      .project_content
-        h4
-          a href="<%= url %>" itemprop="url"
-            | <%= name %>
       .info_bar
         .status_bar
           .progress style="width: <%= display_progress %>%;"
