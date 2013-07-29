@@ -42,8 +42,6 @@
       = render "failed_warning"
 
     #project_description[data-project=@project.to_json]
-    .project_image
-      = image_tag @project.display_image('project_thumb_small')
     .section_header
       h1= @project.name
       h4= @project.user.display_name
