@@ -27,9 +27,9 @@ puts "Creating Configuration entries..."
   catarse_fee: '0.13',
   company_name: 'Catarse',
 
-  host: 'limitless-peak-1506.herokuapp.com',
-  base_domain: 'limitless-peak-1506.herokuapp.com',
-  base_url: "http://limitless-peak-1506.herokuapp.com",
+  host: 'oformigueiro.herokuapp.com',
+  base_domain: 'oformigueiro.herokuapp.com',
+  base_url: "http://oformigueiro.herokuapp.com",
 
   facebook_url: "http://facebook.com/MY-FACEBOOK-PAGE",
   facebook_app_id: '556758001037275',
