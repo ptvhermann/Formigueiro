@@ -27,7 +27,6 @@
       color: rgba(black, 0.6)
       padding-bottom: 20px
   #page_content
-    overflow: auto
     #project_warning
       .alert.alert-warning
         #toggle_warning
@@ -203,11 +202,14 @@
                   background: url($images_path+'link_icon14x14.png') 6px 1px no-repeat
 
       #project_about
+        .video
+          padding-left: 10px
         .text
           width: 100%
           float: left
+          height: 300px
+          overflow: auto
           padding-top: 30px
-          padding-left: 10px
           margin-top: 10px
           position: relative
           .flag
@@ -482,20 +484,16 @@
             font-family: Bevan
             font-size: 16px
             color: #FFFFFF
-            padding-left: 65px
+            text-align: center
             margin-bottom: 20px
             p
               white-space: nowrap
-              text-align: center
               font-family: "Bevan"
               font-weight: 700
-              font-size: 36px
+              font-size: 40px
               color: #FFFFFF
             em
-              padding-left: 40px
-              width: 175px
               font-family: "Bevan"
-              text-align: center
               font-size: 14px
               color: #FFFFFF
         #condition
