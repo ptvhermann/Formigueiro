@@ -101,23 +101,4 @@
                 fieldset
                   = submit_tag t('projects.back_project.submit'), disabled: (not @project.online?)
         .clearfix
-        - if can?(:update, @project)
-          .bootstrap-twitter.bootstrap-form
-            .alert.alert-info
-              h4.alert-header= t('.no_rewards_warning_title')
-              p style="margin:0; padding:0;"
-                = t('.no_rewards_warning')
-            .clearfix
-            = link_to t('.menu.add_reward'), 'javascript:void(0);', class: 'btn btn-success pull-right add_new_reward'
-            .clearfix
-            .well.new_reward_content.hide
-              = semantic_form_for [@project, Reward.new] do |f|
-                = f.input :minimum_value
-                = f.input :description
-                = f.input :days_to_delivery
-                = f.input :maximum_backers
-                = f.submit class: 'btn'
-        #rewards= render 'project_rewards'
-
-    .clearfix
 = render 'show_embed'
