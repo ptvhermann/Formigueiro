@@ -5,6 +5,46 @@ body
     font-style: italic
   b, strong
     font-weight: 700 
+  #page_content2
+    height: 1400px
+    background: url($images_path+"fundo2.png") center top no-repeat
+    .container
+      +grid-system(16)
+      +border-radius(4px)
+      margin-bottom: 40px
+      .ideia
+        +grid(8)
+        p
+          margin-left: 65px
+          margin-right: 30px
+          margin-top: 190px
+          color: white
+          font-size: 15px
+        .demais
+          p
+            margin-left: 65px
+            margin-right: 30px
+            margin-top: 20px
+            color: white
+            font-size: 15px
+      .sustento
+        +grid(8)
+        p
+          margin-left: 95px
+          margin-right: 30px
+          margin-top: 260px
+          color: white
+          font-size: 15px
+      .transparencia
+        +grid(16)
+        p
+          margin-left: 105px
+          margin-right: 40px
+          margin-top: 220px
+          color: white
+          font-size: 15px
+
+
 
   #page_content
     height: 1400px

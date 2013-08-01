@@ -1,68 +1,34 @@
 = content_for :title, t('.title')
-#page_content
+#page_content2
   .container
-    .static_default
-      .title
-        h1= t('.title')
-        h2= t('.subtitle')
-        h3= t('.introduction_html')
-        p= t('.legend_html')
-
-      .tips
-        ul
-          li.gray
-            ul.content
-              li
-                = image_tag('catarse/bg_tips1.png')
-                strong= t('.title_one')
-                p= t('.tip_one')
-              li
-                = image_tag('catarse/bg_tips2.png')
-                strong= t('.title_two')
-                p= t('.tip_two')
-          li
-            ul.content
-              li
-                = image_tag('catarse/bg_tips3.png')
-                strong= t('.title_three')
-                p= t('.tip_three')
-              li
-                = image_tag('catarse/bg_tips4.png')
-                strong= t('.title_four')
-                p= t('.tip_four')
-          li.gray
-            ul.content
-              li
-                = image_tag('catarse/bg_tips5.png')
-                strong= t('.title_five')
-                p= t('.tip_five')
-              li
-                = image_tag('catarse/bg_tips6.png')
-                strong= t('.title_six')
-                p= t('.tip_six')
-          li
-            ul.content
-              li
-                = image_tag('catarse/bg_tips7.png')
-                strong= t('.title_seven')
-                p= t('.tip_seven')
-              li
-                = image_tag('catarse/bg_tips8.png')
-                strong= t('.title_eight')
-                p= t('.tip_eight')
-      .guide
-        .guide_download
-          = link_to '/guia_realizadores.pdf', target: '_blank' do
-            = image_tag('catarse/box_download.png')
-            p= t('.guide')
-
-      .bootstrap-form.center_form
-        fieldset
-          .bootstrap-twitter
-            .curious
-              = link_to t('.explore_curious'), explore_path, :class=>'btn_explore'
-              span = t('.explore_projects')
-            .send
-              = link_to t('.submit'), new_project_path, :class=>'btn_send'
-              span = t('.send_project')
+    .ideia
+      p
+        | Lembra das cenas do filme da Disney “Vida de Inseto” em que centenas de formigas se ajudam mutualmente para tornar o lugar onde vivem um ambiente organizado e agradável? Agora, troque o filme pela realidade, centenas por milhares e formigas por pessoas. Eis ai “O Formigueiro”. 
+      .demais
+        p
+          | Uma plataforma online de crowdfunding social (o crowdfunding é um modelo colaborativo de arrecadação de fundos que auxilia de empreendedores a ONG’s, por exemplo, a atingirem seus mais diversos objetivos, o que muitas vezes não é viável pela ausência de recursos) voltada para projetos de cunho educacional. A ideia é, pois, que escolas, ONG’s e Instituições, que desenvolvam atividades educacionais, coloquem projetos específicos no site de maneira a receber ajuda de pessoas de todos os lugares. Em suma, queremos transformar sonhos em realidades, ideias abstratas em ações concretas.  
+        p
+          | Acreditamos que o nome “O Formigueiro” demonstra muito bem o objetivo do nosso empreendimento. O formigueiro é a organização social mais bem estruturada do planeta e queremos explorar isto ao máximo, representando, por exemplo, a união das formigas e o fato de que pequenas ações quando juntas causam um grande impacto. Nosso desejo é de trabalhar inicialmente com projetos de baixo custo e rápida execução no método tudo ou nada. Assim, se você tem aquela ideia que precisa apenas de um empurrãozinho manda para nós que te ajudamos a realizá-la (:
+    .sustento
+      p
+        | A essa altura você deve estar se perguntando: 
+        br
+        br
+        | “Mas comos eles vão arcar com os custos de tudo isso?!” 
+        br
+        br
+        | É aí que entra o nosso inovador (e pioneiro no Brasil!) modo de sustento que gostamos de resumir em uma única frase: o crowdfunding vivendo do crowdfunding. 
+        br
+        br
+        | Dentre os projetos divulgados pelo Formigueiro, um deles é o próprio “O Formigueiro”, onde TODOS podem doar para a manutenção do site e são responsáveis pelo sustento do mesmo. 
+        br
+        br
+        | Desta forma, o site não cobrará NENHUMA COMISSÃO nos valores que forem doados. 
+        br
+        br
+        | Um viva para a economia criativa!
+    .transparencia
+      p
+        | Acreditamos que através desse nosso modo inovador de sustento, podemos e devemos adotar uma política de transparência total, divulgando todos os gastos do projeto e disponibilizando quadros informando onde cada centavo foi investido. O intuito é que O Formigueiro seja um negócio social, isto é, um negócio sem fins lucrativos onde todo o lucro é reinvestido na própria causa.
+     
     .clearfix
