@@ -2,7 +2,7 @@ div.project
   +grid(4)
   background-color: $ed_gryn
   +transition(all, 0.3s)
-  height: 242px
+  height: 300px
   margin-right: 10px
   margin-bottom: 10px
   overflow: hidden
@@ -105,27 +105,28 @@ div.project
       float: left
       width: 210px
       padding: 5px 5px 10px
-      ul
-        padding-top: 10px
-        li
-          float: left
-          display: inline
-          min-width: 50px
-          margin-right: 5px
-          &:last-child
-            margin-left: 0px
-          h6
-            font-family: Lato
-            font-weight: 700
-            font-size: 12px
-            color: black
-            +opacity(0.7)
-            margin-bottom: 3px
-          p
-            text-transform: uppercase
-            color: $super_minimal_gryn
-            font-family: Arial
-            font-size: 9px
+
+    ul
+      padding-top: 10px
+      display: block
+      li
+        float: left
+        min-width: 50px
+        margin-right: 5px
+        &:last-child
+          margin-left: 0px
+        h6
+          font-family: Lato
+          font-weight: 700
+          font-size: 12px
+          color: black
+          +opacity(0.7)
+          margin-bottom: 3px
+        p
+          text-transform: uppercase
+          color: $super_minimal_gryn
+          font-family: Arial
+          font-size: 9px
     .follow_project
       clear: both
       display: block
