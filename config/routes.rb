@@ -51,6 +51,11 @@ Catarse::Application.routes.draw do
   get "/guidelines_backers",    to: "static#guidelines_backers",  as: :guidelines_backers
   get "/guidelines_start",      to: "static#guidelines_start",    as: :guidelines_start
   get "/about",                 to: "static#about",               as: :about
+  get "/visao",                 to: "static#visao",               as: :visao
+  get "/faq",                   to: "static#faq",                 as: :faq
+  get "/termos",                to: "static#termos",              as: :termos
+  get "/contato",               to: "static#contato",             as: :contato
+  get "/contato_projeto",        to: "static#contato_projeto",     as: :contato_projeto
 
 
   match "/explore" => "explore#index", as: :explore
