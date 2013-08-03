@@ -44,7 +44,6 @@
 [data-controller="sessions"][data-namespace="devise"][data-action="new"]
   .container
     .form_login, .form_register, .login_with_social
-      padding-top: 40px !important
       padding-bottom: 30px
       &.actived
         padding-top: 17px !important
@@ -58,12 +57,12 @@
         font-weight: 700
         font-size: 20px
         padding-bottom: 5px
-        color: $ultra_gryn
+        color: white
       h3
         font-family: Lato
         font-size: 15px
         padding-bottom: 15px
-        color: $_6f_gryn
+        color: black
       .input.check
         label
           font-size: 11px !important
@@ -72,7 +71,7 @@
         font-size: 12px
         width: 220px
     .form_login
-      +grid(5)
+      +grid(6)
       input[type="checkbox"]
         float: left
         margin-right: 5px
@@ -81,7 +80,7 @@
         p.forgot_link
           padding: 15px 0 0
           a
-            color: $blue
+            color: white
             font-family: Arial
             font-size: 13px
             text-decoration: none
@@ -89,8 +88,25 @@
               color: $pink
     .form_register
       +grid(5)
+      padding-top: 245px
+      padding-left: 100px
+    .registro
+      float: left
+      padding-top: 210px
+      padding-left: 110px
+    .entrar
+      float: left
+      padding-top: 270px
+      padding-left: 240px
+    .loginface
+      float:left
+      padding-top: 60px
+      padding-left: 50px
     .login_with_social
       +grid(6)
+      padding-top: 120px
+      padding-left: 55px
+      padding-right: 30px
       .content_form
         padding-left: 20px
       .another_social
