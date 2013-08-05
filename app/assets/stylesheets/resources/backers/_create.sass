@@ -1,4 +1,4 @@
-[data-controller="backers"][data-namespace="projects"][data-action="create"]
+ [data-controller="backers"][data-namespace="projects"][data-action="create"]
   #catarse_moip_form
     overflow: hidden
   //input.error
@@ -130,6 +130,10 @@
 
   #page_content
     .container
+      padding-top: 60px
+      padding-left: 20px
+      height: 900px
+      overflow: auto
       #project_review
         +grid(16)
         padding-top: 15px
@@ -141,13 +145,14 @@
           padding-top: 40px
           padding-bottom: 30px
           h1
-            color: $ultra_gryn
+            color: white
             font-family: "Lato"
             font-weight: 700
             font-size: 24px
             padding: 5px 0
           h2
-            color: #333333
+            color: white
+            font-weight: bold
             font-family: "Lato"
             font-size: 14px
             padding-bottom: 15px
@@ -184,7 +189,7 @@
               margin-top: 20px   
               strong
                 font-size: 18px
-                color: black
+                color: white
                 font-weight: bold
             .reward
               float: right
@@ -194,7 +199,7 @@
               line-height: 21px
               padding: 20px 20px 40px 60px
               width: 280px
-              color: #333
+              color: white
               background: url($images_path+'gift-reward.png') left top no-repeat #F0F0F0
         #credits_notice
           font-family: 'Lato'
@@ -285,7 +290,7 @@
               .inline
                 font-family: 'Lato'
                 a
-                  color: #6BB444
+                  color: white
                   text-decoration: none
                   &:hover
                     text-decoration: underline
@@ -310,7 +315,7 @@
               font-family: "Lato"
               font-size: 18px
               text-transform: uppercase
-              color: #666
+              color: white
           .cc, .boleto
             +grid(7)
             width: auto
