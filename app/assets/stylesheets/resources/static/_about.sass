@@ -1,11 +1,15 @@
 [data-controller="static"][data-action="about"]
   #page_content
+    background: url($images_path+'fundo_equipe.png') center top no-repeat
     .container
-      background: url($images_path+'grey.png') repeat
       .static_default
+        .equipe
         +grid(16)
-        padding-top: 15px
-        max-height: 700px
+        margin-left: 270px
+        padding-top: 200px
+        float: left
+        p
+          padding-bottom: 20px
         .title
           +grid(16)
           +alpha
@@ -124,3 +128,23 @@
           li.second
             border: none
             background: none
+      .foto
+        +grid(16)
+        padding-left: 33px
+        padding-top: 190px
+        margin-right: 50px
+        font-size: 15px
+        font-style: "Arial"
+        color: white
+        .textos
+          +grid(3)
+          margin-right: 65px
+          p
+            margin-bottom: 215px
+          .terceiro
+            margin-left: 6px
+            p
+              margin-bottom: 198px
+          .quarto
+            margin-left: 10px
+
