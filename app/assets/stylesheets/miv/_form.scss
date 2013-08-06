@@ -40,7 +40,7 @@
   label {
     display: block;
     margin-bottom: 5px;
-    color: #333333;
+    color: white;
   }
   input,
   textarea,
@@ -275,18 +275,18 @@
   .control-group.warning > label,
   .control-group.warning .help-block,
   .control-group.warning .help-inline {
-    color: #c09853;
+    color: white;
   }
   .control-group.warning input,
   .control-group.warning select,
   .control-group.warning textarea {
-    color: #c09853;
+    color: white;
     border-color: #c09853;
   }
   .control-group.warning input:focus,
   .control-group.warning select:focus,
   .control-group.warning textarea:focus {
-    border-color: #a47e3c;
+    border-color: white;
     -webkit-box-shadow: 0 0 6px #dbc59e;
     -moz-box-shadow: 0 0 6px #dbc59e;
     box-shadow: 0 0 6px #dbc59e;
