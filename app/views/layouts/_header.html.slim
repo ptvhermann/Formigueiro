@@ -2,8 +2,6 @@
   /= render 'layouts/announcement'
   = link_to "Home", root_url(host: Configuration[:base_domain] || request.domain), :class => 'logo', :title => Configuration[:company_name]
   nav.menu
-    = link_to t('layouts.header.help'), Configuration[:support_forum], target: :_blank, id: 'guidelines_header_modal' if Configuration[:support_forum].present?
-    = link_to t('layouts.header.blog'), Configuration['blog_url'], target: :_blank, class: 'blog' if Configuration['blog_url'].present?
     - if current_user
       = link_to '#', class: 'my_profile_link' do
         = image_tag(current_user.display_image, :size => "30x30", :class => 'profile_picture')
@@ -21,8 +19,6 @@
         - if current_user.trustee?
           - for menu, path in Channels::Adm::ProjectsController.menu do
             li.channel_trustee= link_to menu, path
-        li.divider
-        li= link_to t('layouts.user.logout'), destroy_user_session_path, method: :delete
       - else
           = link_to t('layouts.header.signin'), new_user_session_path 
           = link_to t('layouts.header.signup'), new_user_session_path(active_register: true)
@@ -32,13 +28,3 @@
     a href="/pt/visao" MOTIVAÇÃO
     a href="/pt"  PROJETOS
   .clearfix
-  p
-    | PEQUENAS
-    br
-        | AÇÕES 
-        font id="negrito"
-          | FAZEM
-        br
-          | TODA A DIFERENÇA
-          br
-          a href="/pt/contato_projeto" id="projeto" ENVIE UM PROJETO
