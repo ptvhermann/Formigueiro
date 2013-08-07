@@ -113,6 +113,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rack-mini-profiler'
+  gem 'capistrano'
 end
 
 group :test, :development do
@@ -138,7 +139,8 @@ group :assets do
   gem 'compass-960-plugin'
 end
 
-
+#More capistrano
+gem 'rvm-capistrano'
 
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum

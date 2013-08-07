@@ -1,0 +1,18 @@
+set :template_dir, "config/deploy"
+
+base: &base
+  adapter: postgresql
+  timeout: 5000
+development:
+  database: #{shared_path}/formigueiro_real
+  <<: *base
+test:
+  database: #{shared_path}/formigueiro_teste
+  <<: *base
+production:
+  adapter: postgresql
+  database: formigueiro_prod
+  username: renancoutinho
+  password: <%= Capistrano::CLI.ui.ask("Enter Postgresql database password: ") %>
+  encoding: unicode
+  timeout: 5000
