@@ -12,10 +12,10 @@ development:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: catarse_development
+  database: formigueiro_real
   pool: 5
-  username: postgres
-  password: password
+  username: renancoutinho
+  password: vasco12345
 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,10 +41,7 @@ test:
   adapter: postgresql
   encoding: unicode
   host: localhost
-  database: catarse_test
+  database: formigueiro_teste
   pool: 5
-  username: postgres
-  password: password
-
-
-
+  username: renancoutinho
+  password: vasco12345
