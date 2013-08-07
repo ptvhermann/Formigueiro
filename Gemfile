@@ -139,7 +139,8 @@ group :assets do
   gem 'compass-960-plugin'
 end
 
-
+#More capistrano
+gem 'rvm-capistrano'
 
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum

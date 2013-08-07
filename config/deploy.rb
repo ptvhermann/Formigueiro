@@ -1,5 +1,7 @@
+require "rvm/capistrano"
 require "bundler/capistrano"
-require "capistrano_database.rb"
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'deploy')
+require "capistrano_database"
 
 set :application, "oformigueiro.org"
 set :repository,  "git@github.com:rscoutinho/Formigueiro.git"
@@ -16,7 +18,7 @@ set :branch, "master"
 set :deploy_via, :remote_cache
 set :user, "cap_deploy"
 set :use_sudo, false
-set :deploy_to "/var/webapps/#{application}"
+set :deploy_to, "/var/webapps/#{application}"
 
 set :ssh_options, {:forward_agent => true}
 
