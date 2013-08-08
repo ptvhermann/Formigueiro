@@ -13,6 +13,10 @@
           li
             = link_to t('layouts.user.my_credits'), user_path(current_user, anchor: 'credits')
             .small (#{current_user.display_credits})
+          li.divider
+          - if current_user.admin?
+            - for menu, path in Adm::BaseController.menu do
+              li= link_to menu, path
       - else
           = link_to t('layouts.header.signin'), new_user_session_path 
           = link_to t('layouts.header.signup'), new_user_session_path(active_register: true)
