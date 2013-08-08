@@ -114,37 +114,27 @@
                   | Valor
             .terceiralinha
               ul
+                li= @project.more_links.split('/')[0]
                 li= @project.more_links.split('/')[1]
-                li= @project.more_links.split('/')[2]
-                li= @project.more_links.split('/')[3]      
+                li= @project.more_links.split('/')[2]      
             .terceiralinha
               ul
-                li
-                  | Produtos muito legais e bacanas
-                li
-                  | 01
-                li
-                  | R$90,00     
+                li= @project.more_links.split('/')[3]
+                li= @project.more_links.split('/')[4]
+                li= @project.more_links.split('/')[5]     
             .terceiralinha
               ul
-                li
-                  | Produtos muito legais e bacanas
-                li
-                  | 01
-                li
-                  | R$90,00     
+                li= @project.more_links.split('/')[6]
+                li= @project.more_links.split('/')[7]
+                li= @project.more_links.split('/')[8]    
             .terceiralinha
               ul
-                li
-                  | Produtos muito legais e bacanas
-                li
-                  | 01
-                li
-                  | R$90,00 
+                li= @project.more_links.split('/')[9]
+                li= @project.more_links.split('/')[10]
+                li= @project.more_links.split('/')[11]  
 
             .quartalinha
-              em
-                | TOTAL:  R$900,000       
+              em= @project.more_links.split('/')[11]    
 
         .clearfix
 = render 'show_embed'
