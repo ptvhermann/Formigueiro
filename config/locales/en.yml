@@ -8,7 +8,7 @@ en:
   site:
     title: "The biggest crowdfunding community in Brazil"
     meta_title:  "%{title} · %{company_name}"
-    description: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
+    description: "O Formigueiro é uma plataforma de crowdfunding social voltada para projetos educacionais de baixo custo, rápida implementação e elevado impacto."
     keywords: "catarse, crowdfunding, project, community, open source"
   backer_report_to_project_owner:
     reward_description: 'Reward description'
