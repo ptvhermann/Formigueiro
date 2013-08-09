@@ -13,8 +13,8 @@ pt:
   site:
     title: "A maior comunidade de crowdfunding do Brasil!"
     meta_title:  "%{title} · %{company_name}"
-    description: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
-    keywords: "catarse, crowdfunding, projeto, comunidade, open source"
+    description: "O Formigueiro é uma plataforma de crowdfunding social voltada para projetos educacionais de baixo custo, rápida implementação e elevado impacto."
+    keywords: "oformigueiro, crowdfunding, projeto, comunidade"
 
   backer_report_to_project_owner:
     reward_description: 'Descrição da recompensa'
@@ -81,7 +81,7 @@ pt:
       about: "Quem Somos"
       terms: "Termos de Uso"
       policy: "Política de Privacidade"
-      terms_link: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso'
+      terms_link: 'http://www.oformigueiro.org/pt/termos'
       policy_link: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade'
       contact: Contato
   main:
@@ -254,7 +254,7 @@ pt:
     hints:
       backer:
         credits: "Você possui <strong>%{credits}</strong> em créditos e pode apoiar até este valor sem precisar realizar um novo pagamento."
-        value: "Você escolhe o valor ;) a partir de R$ 10 está ótimo."
+        value: "No momento, O Formigueiro processa quantias apenas maiores ou iguais a R$ 10,00"
       project:
         video_url_edit: 'Cole aqui o link do seu vídeo hospedado no Vimeo'
         about: "Conte-nos um pouco sobre sua inspiração para realizar o projeto, sua história e o que será entregue ao final. Seja sucinto e fuja daquelas formalidades de editais. Nada de OBJETIVO, JUSTIFICATIVA, PÚBLICO-ALVO... Presenteie seus leitores com algo que mexa com eles e seja muito transparente em relação a expectativa sobre o projeto."
@@ -279,7 +279,7 @@ pt:
         anonymous: "Quero que meu apoio seja anônimo."
         credits: "Quero usar meus créditos para este apoio."
         reward: "Selecione sua recompensa"
-        value: "Com quanto você quer apoiar?"
+        value: "Indique quanto você deseja investir neste projeto."
       comment:
         comment: "Deixe seu comentário sobre este projeto"
       project:
@@ -405,8 +405,8 @@ pt:
       new:
         cannot_back: "Não é possível apoiar este projeto no momento. Por favor, apoie outros projetos."
         header:
-          subtitle: "Você está a poucos passos de fazer a diferença e se tornar parte deste projeto."
-          title: "Oohh yeah!"
+          subtitle: "Só mais alguns poucos passos para este projeto ficar mais perto do sucesso."
+          title: "Você é uma pessoa incrível!"
         no_reward: "Obrigado. Eu só quero ajudar o projeto."
         submit: "Revisar e realizar pagamento"
         title: "Apoie o %{name}"
@@ -421,7 +421,7 @@ pt:
           submit: "Efetuar pagamento pelo PayPal"
           title: "Quer fazer pagamento internacional?"
         review_with_reward_html: "Você irá apoiar com <strong>%{value}</strong> e ganhará a seguinte recompensa:"
-        review_without_reward_html: "Você irá apoiar com <strong>%{value}</strong> e não quer nenhuma recompensa por seu apoio."
+        review_without_reward_html: "Você investirá <strong>%{value}</strong> neste projeto."
         submit:
           credits: "Confirmar apoio com créditos"
           moip: "Efetuar pagamento pelo MoIP"
@@ -849,7 +849,7 @@ pt:
       submit_text: "Escolha sua imagem"
       submit: "Enviar"
       my_data: "Meus dados"
-      newsletter: "Quero receber novidades do Catarse por email"
+      newsletter: "Quero receber novidades do Formigueiro por email."
       password_hint: "<i>Deixe em branco caso você não queira trocar sua senha.</i>"
     header:
       bio_tooltip: "Clique aqui para escrever sobre você..."

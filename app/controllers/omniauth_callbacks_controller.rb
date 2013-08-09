@@ -5,12 +5,13 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     OauthProvider.all.each do |p|
       define_method p.name.downcase do 
         omniauth = request.env['omniauth.auth']
+        @existing_user = User.find_by_email(omniauth["info"]["email"])
         @user = User.
           select('users.*').
           joins('JOIN authorizations ON authorizations.user_id = users.id').
           joins('JOIN oauth_providers ON oauth_providers.id = authorizations.oauth_provider_id').
           where("authorizations.uid = :uid AND oauth_providers.name = :provider", {uid: omniauth[:uid], provider: p.name}).
-          first || User.create_with_omniauth(omniauth, current_user)
+          first || (@existing_user.present? ? User.create_with_omniauth(omniauth, @existing_user) : User.create_with_omniauth(omniauth, current_user))
 
         flash[:notice] = I18n.t("devise.omniauth_callbacks.success", kind: p.name.capitalize)
         sign_in @user, event: :authentication
