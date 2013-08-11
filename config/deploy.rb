@@ -22,7 +22,7 @@ set :deploy_to, "/var/webapps/#{application}"
 
 set :ssh_options, {:forward_agent => true}
 
-set :shared_assets, %{public/uploads}
+set :shared_assets, ["public/uploads"]
 
 namespace :assets do
   namespace :symlinks do
