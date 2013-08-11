@@ -6,10 +6,11 @@ en:
       confirmed_backers: 'Confirmed backs'
       created_projects: 'Created projects'
   site:
-    title: "The biggest crowdfunding community in Brazil"
+    title: "O Formigueiro"
     meta_title:  "%{title} · %{company_name}"
     description: "O Formigueiro é uma plataforma de crowdfunding social voltada para projetos educacionais de baixo custo, rápida implementação e elevado impacto."
     keywords: "catarse, crowdfunding, project, community, open source"
+    fb_image: 'http://www.oformigueiro.org/assets/logo_formiga2.jpg'
   backer_report_to_project_owner:
     reward_description: 'Reward description'
     confirmed_at: 'Payment confirmed at'
@@ -707,7 +708,7 @@ en:
       explore_projects: "I want to back a project"
     guidelines:
       title: "How it works"
-      subtitle: "Get to know Catarse better."
+      subtitle: "Get to know O Formigueiro better."
       introduction_html: "Catarse is a space of exchange among individuals who together <br >enable the realization of creative projects."
       legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, catharsis happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
       submit: "SUBMITTING A PROJECT"

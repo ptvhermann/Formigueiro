@@ -139,7 +139,6 @@
       h1
         margin-legt: 30px
         color: #FFFFFF
-        font-family: "Bevan"
         font-weight: 700
         margin-top: 15px
         font-size: 24px
@@ -153,6 +152,9 @@
           text-decoration: none
           &:hover
             text-decoration: underline
+    .tab_container
+      a 
+        font-size: 13px
     .main
       +grid(11)
       padding-bottom: 20px
@@ -163,9 +165,11 @@
         .social
           padding-top: 10px
           padding-left: 10px
+          background-color: #69bfba
+          height: 35px
+          width: 92.2%
           #facebook_share, #facebook_share iframe
             float: left
-            background-color: #69bfba
           .twitter_share
             width: 89px !important
             float: left
@@ -282,11 +286,10 @@
                   text-decoration: none
                   margin-bottom: 15px
                   display: block
+                  color: #ffffff
                   &:hover
                     color: $pink
                     text-decoration: underline
-                .anon
-                  color:white
               #confirmed, #backed
                 padding-top: 4px
                 height: 16px
@@ -486,19 +489,16 @@
           float: left
           padding: 20px 20px 0 20px
           .item
-            font-family: Bevan
             font-size: 16px
             color: #FFFFFF
             text-align: center
             margin-bottom: 20px
             p
               white-space: nowrap
-              font-family: "Bevan"
               font-weight: 700
               font-size: 40px
               color: #FFFFFF
             em
-              font-family: "Bevan"
               font-size: 14px
               color: #FFFFFF
         .orcamento

@@ -22,8 +22,30 @@ set :deploy_to, "/var/webapps/#{application}"
 
 set :ssh_options, {:forward_agent => true}
 
+set :shared_assets, %{public/uploads}
+
+namespace :assets do
+  namespace :symlinks do
+    desc "Setup application symlinks for shared assets"
+    task :setup do
+      shared_assets.each { |link| run "mkdir -p #{shared_path}/#{link}"}
+    end
+
+    desc "Link assets for current deploy to the shared location"
+    task :update do
+      shared_assets.each { |link| run "ln -nfs #{shared_path}/#{link} #{release_path}/#{link}" }
+    end
+  end
+end
+
 # if you want to clean up old releases on each deploy uncomment this:
 set :keep_releases, 10
+before "deploy:setup" do
+  assets.symlinks.setup
+end
+before "deploy:symlink" do
+  assets.symlinks.update
+end
 after "deploy:restart", "deploy:cleanup"
 after 'deploy:update_code', 'deploy:migrate'
 # if you're still using the script/reaper helper you will need

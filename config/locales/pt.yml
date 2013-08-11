@@ -11,10 +11,11 @@ pt:
   or: "ou"
 
   site:
-    title: "A maior comunidade de crowdfunding do Brasil!"
+    title: "O Formigueiro"
     meta_title:  "%{title} · %{company_name}"
     description: "O Formigueiro é uma plataforma de crowdfunding social voltada para projetos educacionais de baixo custo, rápida implementação e elevado impacto."
     keywords: "oformigueiro, crowdfunding, projeto, comunidade"
+    fb_image: 'http://www.oformigueiro.org/assets/logo_formiga2.jpg'
 
   backer_report_to_project_owner:
     reward_description: 'Descrição da recompensa'
@@ -389,6 +390,7 @@ pt:
       no_reward: "Este apoiador não selecionou nenhuma recompensa"
     backers:
       review:
+        paypal: "PayPal"
         error: "Ooops. Ocorreu um erro ao registrar seu apoio. Por favor, tente novamente."
       show:
         error: "Ooops. Você só pode acessar esta página depois de apoiar um projeto."
@@ -429,7 +431,7 @@ pt:
         title: "Preencha e revise os dados para pagamento"
         choose_payment: "Como você quer pagar?"
         choose_payment_subtitle: "Selecione abaixo uma forma de pagamento"
-        choose_credit_card: "Pagamento internacional - PayPal"
+        choose_credit_card: "PayPal"
         choose_boleto: "Pagamento nacional"
         cpf: "Para prosseguir, por favor informe:"
         payment_card: "Pagamento com Cartão"
@@ -461,7 +463,7 @@ pt:
       suggest_for_you: "sugerido para você"
       highlight_project: "projeto em destaque"
       guidelines: "Como Funciona"
-      guidelines_subtitle: "Entenda o Catarse"
+      guidelines_subtitle: "Entenda o O Formigueiro"
     pending:
       can_finish: "Pode finalizar?"
       finished: Finalizado?
@@ -636,13 +638,13 @@ pt:
     faq:
       title: "Perguntas frequentes"
     guidelines_start:
-      accept: "Eu li e entendi como funciona o Catarse."
+      accept: "Eu li e entendi como funciona o O Formigueiro."
       explore_curious: "Tô aqui de curioso!"
       explore_projects: "Quero explorar os projetos."
       submit: "Próximo Passo!"
       send_project: "Quero enviar meu projeto."
       subtitle: "Entenda, passo a passo, como funciona para viabilizar seu projeto através do Catarse."
-      title: "Como funciona o Catarse?"
+      title: "Como funciona o O Formigueiro?"
       introduction: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel."
       legend_html: "Preste atenção ao passo-a-passo e nas perguntas respondidas para decidir se <br>o Catarse é o caminho para financiar o seu projeto."
       title_one: "Envie seu projeto"
@@ -750,8 +752,8 @@ pt:
       explore_curious: "Tâmo junto!"
       explore_projects: "Quero apoiar um projeto"
     guidelines:
-      title: "Como Funciona o Catarse"
-      subtitle: "Conheça melhor o que é o Catarse."
+      title: "Como Funciona o O Formigueiro"
+      subtitle: "Conheça melhor o que é o O Formigueiro."
       introduction_html: "O Catarse é um espaço de trocas entre indivíduos que, juntos, <br>viabilizam a realização de projetos criativos."
       legend_html: "Acreditamos que conectar pessoas que compartilham valor a respeito de uma causa, uma ideia, um projeto é uma das melhores formas de fazer com que elas se tornem realidade. <br><br> Seja muito bem-vindo! Esse espaço é tão seu quanto nosso, afinal, Catarse acontece, diariamente,  do encontro de pessoas em busca de novos caminhos para dar vida a mais iniciativas da própria sociedade. Entendemos ser essa uma alternativa  a recursos governamentais, ao patrocínio de empresas e ao não dos bancos. =D"
       submit: "Enviar um projeto"
