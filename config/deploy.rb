@@ -33,6 +33,7 @@ namespace :assets do
 
     desc "Link assets for current deploy to the shared location"
     task :update do
+      mkdir -p "#{release_path}/#{link}"
       shared_assets.each { |link| run "ln -nfs #{shared_path}/#{link} #{release_path}/#{link}" }
     end
   end
@@ -43,14 +44,12 @@ set :keep_releases, 10
 before "deploy:setup" do
   assets.symlinks.setup
 end
-before "deploy:symlink" do
+after "deploy:finalize_update" do
   assets.symlinks.update
 end
 after "deploy:restart", "deploy:cleanup"
 after 'deploy:update_code', 'deploy:migrate'
 # if you're still using the script/reaper helper you will need
-# these http://github.com/rails/irs_process_scripts
-
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
   task :start do ; end
