@@ -33,7 +33,7 @@ namespace :assets do
 
     desc "Link assets for current deploy to the shared location"
     task :update do
-      mkdir -p "#{release_path}/#{link}"
+      run "mkdir -p #{release_path}/#{link}"
       shared_assets.each { |link| run "ln -nfs #{shared_path}/#{link} #{release_path}/#{link}" }
     end
   end
