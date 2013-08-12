@@ -5,6 +5,7 @@
         h1= t('.header.title')
         h2= t('.header.subtitle')
       #back_options.bootstrap-form
+        = hidden_field_tag 'remain', @remaining
         = semantic_form_for @backer, url: @create_url, html: { id: 'backer_form' } do |form|
           = form.inputs do
             = form.label :value, t('formtastic.labels.backer.value')

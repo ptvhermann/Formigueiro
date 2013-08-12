@@ -149,6 +149,10 @@ class Project < ActiveRecord::Base
     project_total ? project_total.pledged : 0.0
   end
 
+  def remaining_til_goal
+    project_total ? (goal - project_total.pledged) : goal
+  end
+
   def total_backers
     project_total ? project_total.total_backers : 0
   end
@@ -317,37 +321,37 @@ class Project < ActiveRecord::Base
     update_attributes({ permalink: "deleted_project_#{id}"})
   end
 
-  def after_transition_of_online_to_waiting_funds
-    notify_observers :notify_owner_that_project_is_waiting_funds
-  end
+  #def after_transition_of_online_to_waiting_funds
+    #notify_observers :notify_owner_that_project_is_waiting_funds
+  #end
 
-  def after_transition_of_waiting_funds_to_failed_or_successful
-    notify_observers :notify_admin_that_project_reached_deadline
-  end
+  #def after_transition_of_waiting_funds_to_failed_or_successful
+  #  notify_observers :notify_admin_that_project_reached_deadline
+  #end
 
-  def after_transition_of_any_to_failed_or_successful
-    notify_observers :sync_with_mailchimp
-  end
+  #def after_transition_of_any_to_failed_or_successful
+   # notify_observers :sync_with_mailchimp
+  #end
 
-  def after_transition_of_online_to_failed
-    notify_observers :notify_users
-  end
+  #def after_transition_of_online_to_failed
+   # notify_observers :notify_users
+  #end
 
-  def after_transition_of_wainting_funds_to_successful
-    notify_observers :notify_owner_that_project_is_successful
-  end
+  #def after_transition_of_wainting_funds_to_successful
+   # notify_observers :notify_owner_that_project_is_successful
+  #end
 
-  def after_transition_of_draft_to_rejected
-    notify_observers :notify_owner_that_project_is_rejected
-  end
+  #def after_transition_of_draft_to_rejected
+  #  notify_observers :notify_owner_that_project_is_rejected
+  #end
 
-  def after_transition_of_wainting_funds_to_successful_or_failed
-    notify_observers :notify_users
-  end
+  #def after_transition_of_wainting_funds_to_successful_or_failed
+   # notify_observers :notify_users
+  #end
 
   def after_transition_of_draft_to_online
     update_attributes({ online_date: DateTime.now })
-    notify_observers :notify_owner_that_project_is_online
+    #notify_observers :notify_owner_that_project_is_online
   end
 
   def new_draft_recipient

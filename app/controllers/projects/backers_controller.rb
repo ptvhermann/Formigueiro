@@ -37,6 +37,7 @@ class Projects::BackersController < ApplicationController
     @rewards = [empty_reward] + @project.rewards.order(:minimum_value)
     @reward = @project.rewards.find params[:reward_id] if params[:reward_id]
     @reward = nil if @reward and @reward.sold_out?
+    @remaining = @project.remaining_til_goal
     if @reward
       @backer.reward = @reward
       @backer.value = "%0.0f" % @reward.minimum_value

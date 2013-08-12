@@ -7,7 +7,7 @@ class Backer < ActiveRecord::Base
   schema_associations
 
   validates_presence_of :project, :user, :value
-  validates_numericality_of :value, greater_than_or_equal_to: 10.00
+  validate :validate_donation_amount
   validate :reward_must_be_from_project
   validate :value_must_be_at_least_rewards_value
   validate :should_not_back_if_maximum_backers_been_reached, on: :create
@@ -226,5 +226,14 @@ class Backer < ActiveRecord::Base
 
   def define_payment_method
     self.update_attributes({ payment_method: 'MoIP' })
+  end
+
+  protected
+
+  def validate_donation_amount
+    remaining_goal = project.remaining_til_goal
+    unless ((remaining_goal >= 10 && value >= 10 && value <= remaining_goal) || (remaining_goal < 10 && value == remaining_goal))
+      errors.add("value", "the value must be greater than 10 or the amount remaining needed to reach the goal.")
+    end
   end
 end

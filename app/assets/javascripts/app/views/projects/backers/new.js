@@ -48,7 +48,8 @@ CATARSE.BackersNewView = Backbone.View.extend({
     }
     value_ok = function(){
       var value = $('#backer_value').val()
-      if(/^(\d+)$/.test(value) && parseInt(value) >= 10){
+      var remaining = parseInt($('#remain').val())
+      if(/^(\d+)$/.test(value) && ((remaining >= 10 && parseInt(value) >= 10 && parseInt(value) <= remaining) || (remaining <= 10 && parseInt(value) == remaining))){
         $('#backer_value').addClass("ok").removeClass("error")
         return true
       } else {
@@ -57,6 +58,11 @@ CATARSE.BackersNewView = Backbone.View.extend({
         return false
       }
     }
+    var remaining = parseInt($("#remain").val())
+    if (parseInt(remaining) < 10) {
+      $("#backer_value").val(parseInt(remaining))
+      $("#backer_value").attr("readonly", "true")
+    } 
     $('input[type=radio]').click(function(){
       var id = /^backer_reward_id_(\d+)$/.exec($(this).attr('id'))
       id = parseFloat(id[1])
