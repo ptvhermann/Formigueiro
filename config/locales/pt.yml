@@ -294,6 +294,7 @@ pt:
         more_links: "Lista de Links relacionados a seu projeto *"
         first_backers: "Lista com os primeiros apoiadores *"
         how_know: "Como você conheceu o Catarse? *"
+        more_details_pdf: 'Mais detalhes (PDF)'
       reward:
         days_to_delivery: "Previsão de entrega"
         maximum_backers: "Máximo de apoiadores (opcional)"

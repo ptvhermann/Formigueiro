@@ -7,7 +7,7 @@
         p= t('.legend_html')
       .bootstrap-form
         .clearfix
-        = semantic_form_for @project, html: { id: 'project_form' } do |form|
+        = semantic_form_for @project, html: { id: 'project_form', multipart: true } do |form|
           = form.inputs do
             .input.control-group.error
             .input
@@ -113,6 +113,15 @@
                   .important= t('.how_know_important')
               = form.label :how_know, t('formtastic.labels.project.how_know')
               = form.text_area :how_know, class: "#{'error' if @project.errors[:how_know].present?}"
+
+            .input
+              .bootstrap-alert
+                span
+                .alert
+                  .important
+              = form.label :donation_info_pdf, t('formtastic.labels.project.more_details_pdf')
+              = form.file_field :donation_info_pdf
+              = form.hidden_field :donation_info_pdf_cache
 
             .clearfix
             .submit

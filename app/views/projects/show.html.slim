@@ -135,5 +135,6 @@
 
             .quartalinha
               em= @project.more_links.split('/')[11]    
-
+          .pdfdownload
+            = link_to "Mais detalhes", @project.donation_info_pdf.url, target: '_blank'
         .clearfix
