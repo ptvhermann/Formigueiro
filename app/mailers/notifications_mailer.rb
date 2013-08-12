@@ -8,6 +8,7 @@ class NotificationsMailer < ActionMailer::Base
     address.display_name = (@notification.mail_params && @notification.mail_params.has_key?(:display_name)) ? @notification.mail_params[:display_name] : ::Configuration[:company_name]
     subject = I18n.t("notifications.#{@notification.notification_type.name}.subject", @notification.mail_params)
     @header = I18n.t("notifications.#{@notification.notification_type.name}.header", @notification.mail_params, default: subject)
+    attachments.inline['logo_formiga2.jpg'] = File.read(Rails.root.join('app/assets/images/logo_formiga2.jpg'))
     m = mail({
       from: address.format,
       to: @notification.user.email,
