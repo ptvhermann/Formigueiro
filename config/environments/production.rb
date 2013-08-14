@@ -62,6 +62,6 @@ Catarse::Application.configure do
   config.active_support.deprecation = :notify
   config.active_record.schema_format = :sql
 
-  config.force_ssl = true
+  #config.force_ssl = true
 
 end
