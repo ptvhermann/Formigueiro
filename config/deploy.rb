@@ -24,6 +24,13 @@ set :ssh_options, {:forward_agent => true}
 
 set :shared_assets, ["public/uploads"]
 
+namespace :deploy do
+  desc "add states to database"
+  task :seed_states do
+   run "cd #{current_path}; bundle exec rake db:seed:state_seeds RAILS_ENV=PRODUCTION"
+  end
+end
+
 namespace :assets do
   namespace :symlinks do
     desc "Setup application symlinks for shared assets"
@@ -48,6 +55,7 @@ after "deploy:finalize_update" do
 end
 after "deploy:restart", "deploy:cleanup"
 after 'deploy:update_code', 'deploy:migrate'
+after 'deploy:migrate', 'deploy:seed_states'
 # if you're still using the script/reaper helper you will need
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
