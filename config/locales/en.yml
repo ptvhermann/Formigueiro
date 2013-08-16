@@ -355,7 +355,7 @@ en:
   found_singular: Found
   here: here
   i_backed: "I backed the project %{name} on @catarse"
-  i_just_backed: "I just backed the project %{name} on @catarse"
+  i_just_backed: "I just backed the project %{name} on @oformigueirobr"
   layouts:
     login:
       login_with_facebook: "sign in with your facebook account"

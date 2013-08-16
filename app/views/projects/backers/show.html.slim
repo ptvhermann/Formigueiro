@@ -19,12 +19,7 @@
               = image_tag 'catarse/icon-tw.png', title: 'Twitter'
             = link_to "http://www.facebook.com/share.php?u=#{project_by_slug_url(permalink: @project.permalink)}", target: :_blank do
               = image_tag 'catarse/icon-fb.png', title: 'Facebook'
-        #recommended_projects
-          h2 = t('.recommended_projects')
-          - rp = @backer.user.recommended_projects(3)
-          - if rp.count > 0
-            - rp.each do |project|
-              = render partial: 'projects/box', locals: {project: project }
+      = link_to "<< Projetos".html_safe, root_path, :class => "go-to-proj"
       .clearfix
 
 

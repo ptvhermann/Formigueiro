@@ -303,7 +303,7 @@ pt:
   found_singular: Encontrado
   here: aqui
   i_backed: "Eu apoiei o projeto %{name} no @catarse"
-  i_just_backed: "Eu acabei de apoiar o projeto %{name} no @catarse"
+  i_just_backed: "Eu acabei de apoiar o projeto %{name} no @oformigueirobr"
   layouts:
     login:
       login_with_facebook: "entre com sua conta do facebook"
