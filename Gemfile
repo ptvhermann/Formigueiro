@@ -98,7 +98,7 @@ group :production do
 
 
   # Monitoring with the new new relic
-  gem 'newrelic_rpm'
+  #gem 'newrelic_rpm'
 
   # Using dalli and memcachier have not presented significative performance gains
   # Probably this is due to our pattern of cache usage
