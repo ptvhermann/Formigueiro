@@ -231,6 +231,7 @@ class Backer < ActiveRecord::Base
   protected
 
   def validate_donation_amount
+    return unless project
     remaining_goal = project.remaining_til_goal
     unless ((remaining_goal >= 10 && value >= 10 && value <= remaining_goal) || (remaining_goal < 10 && value == remaining_goal))
       errors.add("value", "the value must be greater than 10 or the amount remaining needed to reach the goal.")
