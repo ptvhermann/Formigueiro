@@ -56,8 +56,7 @@ CATARSE.ExploreIndexView = Backbone.View.extend({
     _this.changeReplacedTitle()
     _this.selectItem("recommended")
     _this.initializeView({
-      recommended: true,
-      not_expired: true
+      successful_or_recommended: true
     })
   },
 

@@ -89,6 +89,7 @@ class Project < ActiveRecord::Base
   scope :backed_by, ->(user_id){
     where("id IN (SELECT project_id FROM backers b WHERE b.state = 'confirmed' AND b.user_id = ?)", user_id)
   }
+  scope :successful_or_recommended, where("(projects.recommended = 't' AND projects.expires_at >= current_timestamp) OR projects.state = 'successful'")
 
   attr_accessor :accepted_terms
 
