@@ -343,12 +343,12 @@ pt:
       site_title: "Recuperar senha"
   project:
     start:
-      email_subject: "O seu projeto foi recebido pela equipe do Catarse"
+      email_subject: "O seu projeto foi recebido pela equipe do OFormigueiro"
       email_text: "Muito obrigado por confiar no Catarse e enviar seu projeto pra gente :) <br><br> Antes de mais nada, queria relembrar como funciona o passo-a-passo da seleção dos projetos no Catarse. Pega a lógica, são 4 passos: <br><br> 1 - Você preencheu aquele formulário lindo e a gente acabou de recebê-lo; <br><br> 2 - Nossa equipe de atendimento vai te responder em até 4 dias úteis. Não é necessariamente uma questão de Sim ou de Não, com certeza vamos trocar alguns emails antes de o projeto ir para o ar.  <br><br> 3 - Quando o projeto estiver afinado, iremos enviar um link especial pra você cadastrar o seu projeto do jeitinho que irá para o ar; <br><br> 4 - Você avisará a gente que fez esse cadastro e nós autorizaremos o projeto a ficar disponível para que todos os seres humanos do mundo que tenham acesso à internet possam divulgá-lo e apoiá-lo (caso eles queiram, né?).  <br><br> <strong>Uma informação importante</strong>: se você esqueceu de enviar algo nesse formulário que você preencheu, sem problemas, você poderá adicionar novas informações (ou mudar alguma delas) assim que a equipe de atendimento entrar em contato contigo, ok?  <br><br> Enquanto isso, vale a pena conhecer os projetos que estão no ar (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) e - se gostar de algum deles- apoiar! Essa é a melhor maneira de mostrar que acredita na cultura do financiamento colaborativo no Brasil e fomentar o ecossistema que está se formando ao redor do Catarse. Além, é claro, de se inspirar para o seu projeto.  <br> Fique ligado em nossas novidades no <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> e no <a href='%{twitter}' style='color: #E75297 !important;'>Twitter</a> e conheça mais sobre o Catarse lendo nossos posts no <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.  <br> Se ficou com alguma dúvida, entre em contato conosco no: %{email}"
-      notification_text: "O seu projeto foi recebido pela equipe do Catarse"
+      notification_text: "O seu projeto foi recebido pela equipe do OFormigueiro"
     finish:
       successful:
-        email_subject: "Uhuu! O projeto %{project_name} foi bem-sucedido no Catarse"
+        email_subject: "Uhuu! O projeto %{project_name} foi bem-sucedido no OFormigueiro"
         email_text: "O projeto %{project_link}, que você apoiou, foi financiado com sucesso no Catarse! Hora de comemorar o/<br><br>O projeto teve, incluindo você, %{project_total_backers} maravilhosos apoiadores, arrecadou %{project_pleged} e atingiu %{project_process}% da meta da captação =D<br><br>Ahh, uma informação importante: a equipe do Catarse leva até 3 dias úteis para passar a lista de contato de todos os apoiadores para os produtores do projeto. Por isso, o realizador entrará em contato contigo para agradecimentos e pra falar sobre as recompensas só daqui alguns dias, ok?<br><br>Enquanto isso, compartilhe com todo mundo este sucesso!<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>Se quiser entrar em contato com %{project_owner_name}, realizador do projeto, mande um email para %{project_owner_email}.<br><br>Se tiver alguma outra dúvida, acesse nosso FAQ: <a href='http://www.catarse.me/faq' style='color: #008800;'>www.catarse.me/faq</a> ou mande um email para o <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
         facebook_text: "Uhuu! O projeto '%{name}', que eu apoiei, foi bem-sucedido no Catarse!"
         notification_text: "Uhuu! O projeto %{link} que você apoiou foi bem-sucedido! Espalhe por aí!"
@@ -871,7 +871,7 @@ pt:
       intro: "Você está recebendo esta mensagem pois se cadastrou no Catarse"
       mailee: "Mensagem entregue pelo Mailee.me"
       salutation: "Um grande abraço,"
-      signature: "Equipe do Catarse"
+      signature: "Equipe do OFormigueiro"
       unsubscribe: "Descadastrar da lista"
       unsubscribe_long: "Se não quiser mais receber estes emails"
       weblink: "Ver na web"

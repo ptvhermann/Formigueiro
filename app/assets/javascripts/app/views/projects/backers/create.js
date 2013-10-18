@@ -100,6 +100,9 @@ CATARSE.ReviewForm = Backbone.View.extend({
           $('.tab_container #payment_menu a.enabled:first').trigger('click')
         }
         $('#payment.hide').show();
+        setTimeout(function () {
+          $('.container').mCustomScrollbar("scrollTo", "bottom");
+        }, 600);
       }
     } else {
       $('#payment.hide').hide();

@@ -58,7 +58,7 @@ end
   email_contact: 'contato@catarse.me',
   email_payments: 'financeiro@catarse.me',
   email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
+  email_system: 'contato.oformigueiro@gmail.com',
   email_no_reply: 'no-reply@catarse.me',
   facebook_url: "http://facebook.com/catarse.me",
   facebook_app_id: '173747042661491',

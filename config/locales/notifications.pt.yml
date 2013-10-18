@@ -33,8 +33,8 @@ pt:
       subject: "Você tem um apoio iniciado para o projeto %{project_name}, que não foi financiado - algumas informações úteis"
       header: "Informações sobre confirmação de apoio, créditos e reembolso ;)"
     project_received:
-      subject: "O seu projeto foi recebido pelo Catarse"
-      header: "O seu projeto foi recebido pela equipe do Catarse"
+      subject: "O seu projeto foi recebido pelo OFormigueiro"
+      header: "O seu projeto foi recebido pela equipe do OFormigueiro"
     project_received_channel:
       subject: "O seu projeto foi recebido Canal Asas"
       header: "O seu projeto foi recebido pela equipe do Canal Asas"
